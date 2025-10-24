@@ -1736,3 +1736,34 @@ https://www.tooplate.com/view/2138-aqua-nova
                 font-size: 0.85rem;
             }
         }
+        .contact-item {
+    /* Garante que o ícone esteja perfeitamente centralizado com o texto ao lado */
+    align-items: center; 
+}
+
+.contact-text {
+    /* Aumenta o espaçamento interno do bloco de texto, se necessário */
+    padding: 5px 0; 
+}
+
+.contact-label {
+    margin-bottom: 2px; /* Adiciona um pequeno espaçamento após o rótulo (EMAIL, WHATSAPP) */
+    font-size: 0.8em; /* Deixe o rótulo ligeiramente menor */
+    font-weight: 600; /* Use um negrito forte, se ainda não estiver usando */
+}
+
+.contact-value {
+    font-size: 1em; /* Mantenha o valor (o email, telefone) com o tamanho padrão */
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #00bcd4; /* Cor mais clara para o destaque */
+    box-shadow: 0 0 5px rgba(0, 188, 212, 0.5); /* Brilho suave */
+    outline: none; /* Remove o contorno padrão do navegador */
+}
+/* Se você tem cards internos (como na sua imagem), use margem para separá-los */
+.contact-details > div { /* Aplica a margem em todos os filhos diretos do contact-details */
+    margin-bottom: 15px; /* Aumenta a distância vertical entre os cards */
+    padding: 15px; /* Aumenta o espaçamento interno do card */
+    /* Adicionar aqui seu estilo de 'glassmorphism' (fundo semi-transparente) */
+}
