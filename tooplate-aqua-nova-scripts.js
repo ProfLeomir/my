@@ -121,25 +121,3 @@ https://www.tooplate.com/view/2138-aqua-nova
                 }
             });
         });
-
-        // Form submissions - Fixed with error handling
-        const contactForm = document.querySelector('.contact-form');
-        if (contactForm) {
-            contactForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                alert('Message sent successfully! 🌊 (This is a demo)');
-            });
-        }
-
-        // Newsletter form submission - Fixed with error handling
-        const newsletterForm = document.querySelector('.newsletter-form');
-        if (newsletterForm) {
-            newsletterForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                const emailInput = document.querySelector('.newsletter-input');
-                if (emailInput && emailInput.value) {
-                    alert(`Thank you for subscribing! 🐠 We will keep you updated on our ocean discoveries. (This is a demo)`);
-                    emailInput.value = '';
-                }
-            });
-        }
