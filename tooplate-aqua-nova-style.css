@@ -7,7 +7,43 @@ https://www.tooplate.com/view/2138-aqua-nova
 */
 
 @charset "utf-8";
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse; /* Remove espaçamento entre células */
+    margin-top: 20px;
+    color: #fff; /* Texto branco */
+    background: rgba(255, 255, 255, 0.05); /* Fundo sutil */
+    border-radius: 8px;
+    overflow: hidden; /* Para garantir que o border-radius funcione */
+}
 
+.schedule-table th,
+.schedule-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid rgba(0, 188, 212, 0.2); /* Borda azul clara */
+}
+
+.schedule-table thead th {
+    background: rgba(0, 188, 212, 0.3); /* Fundo do cabeçalho azul/água */
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.schedule-table tbody tr:hover {
+    background: rgba(0, 188, 212, 0.15); /* Efeito hover na linha */
+}
+
+.schedule-table tbody td {
+    font-weight: 400;
+}
+
+/* Destacar o horário indisponível */
+.schedule-table tbody td:contains("Indisponível") {
+    color: #f97316; /* Cor laranja/vermelha */
+    font-weight: 600;
+    font-style: italic;
+}
 /* CSS Document */
 
         * {
